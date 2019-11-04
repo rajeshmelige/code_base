@@ -14,6 +14,7 @@ public class InsertionSort {
 		for(int i=0;i<sortedAscArray.length;i++) {
 			System.out.print(sortedAscArray[i]);
 		}
+		//Descending
 		int[] sortedDescArray = sortedDescending(a);
 		System.out.println("\nDescending sorted array--");
 		for(int i=0;i<sortedDescArray.length;i++) {
