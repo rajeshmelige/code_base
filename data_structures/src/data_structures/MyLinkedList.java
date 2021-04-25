@@ -1,6 +1,6 @@
 package data_structures;
 
-public class LinkedList {
+public class MyLinkedList {
 	Node head;
 	public static class Node {
 		int data;
@@ -12,7 +12,7 @@ public class LinkedList {
 	}
 	
 	public static void main(String[] args) {
-		LinkedList list = new LinkedList();
+		MyLinkedList list = new MyLinkedList();
 		insert(list,0);
 		insert(list,1);
 		insert(list,2);
@@ -26,10 +26,10 @@ public class LinkedList {
 		int value = get(list,4);
 		System.out.println(value);
 		
-		//printList(list);
+		printList(list);
 	}
 
-	private static int get(LinkedList list, int i) {
+	private static int get(MyLinkedList list, int i) {
 		Node current = list.head;
 		int n = 0;
 		
@@ -40,7 +40,7 @@ public class LinkedList {
 		return current.data;
 	}
 
-	private static void printList(LinkedList list) {
+	private static void printList(MyLinkedList list) {
 		Node last = list.head;
 		while(last != null) {
 			System.out.println(last.data);
@@ -48,7 +48,7 @@ public class LinkedList {
 		}
 	}
 
-	private static void insert(LinkedList list, int data) {
+	private static void insert(MyLinkedList list, int data) {
 		Node newNode = new Node(data);
 		newNode.next = null;
 		if(list.head == null) {
